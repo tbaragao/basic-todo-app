@@ -2,7 +2,7 @@ export default function App() {
 
   return (
     <>
-      clean project
+      <div className="text-blue-500">Clean Project with tailwind</div>
     </>
   )
 }
