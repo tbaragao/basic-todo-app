@@ -7,16 +7,16 @@ export const textVariants= cva("font-sans text-gray-400", {
             "body-sm-bold": "text-sm leading-5 font-semibold",
             "body-md": "text-base leading-4 font-regular",
             "body-md-bold" : "text-base leading-6 font-semibold"
-        },
-        defaultVariants:{
-            variant: "body-md"
         }
+    },
+    defaultVariants:{
+        variant: "body-md"
     }
 })
 
 interface TextProps extends VariantProps<typeof textVariants>{
     as?: keyof React.JSX.IntrinsicElements,
-    className: string,
+    className?: string,
     children?: React.ReactNode
 }
 

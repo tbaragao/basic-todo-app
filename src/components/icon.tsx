@@ -7,10 +7,10 @@ export const iconVariants = cva("", {
         animate:{
             false: "",
             true: "animate-spin"
-        },
-        defaultVariants:{
-            animate: false
         }
+    },
+    defaultVariants:{
+        animate: false
     }
 })
 
