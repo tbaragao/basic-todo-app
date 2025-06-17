@@ -1,8 +1,10 @@
+import Text from "./components/text";
+
 export default function App() {
 
   return (
     <>
-      <div className="text-green-base">Clean Project with tailwind</div>
+      <Text variant="body-md-bold" className="text-green-base">Clean Project with tailwind</Text>
     </>
   )
 }
