@@ -3,6 +3,7 @@ import Text from "./components/text";
 import TrashIcon from "./assets/icons/trash-regular.svg?react";
 import Badge from "./components/badge";
 import Button from "./components/button";
+import ButtonIcon from "./components/button-icon";
 
 export default function App() {
 
@@ -13,6 +14,9 @@ export default function App() {
       <Badge variant="primary">5</Badge>
       <Badge variant="secondary">2 de 5</Badge>
       <Button icon={TrashIcon} type="button" >Delete</Button>
+      <ButtonIcon variant="primary" icon={TrashIcon} type="button"></ButtonIcon>
+      <ButtonIcon variant="secondary" icon={TrashIcon} type="button"></ButtonIcon>
+      <ButtonIcon variant="terciary" icon={TrashIcon} type="button"></ButtonIcon>
     </>
   )
 }
