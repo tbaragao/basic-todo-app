@@ -7,33 +7,40 @@ import ButtonIcon from "./components/button-icon";
 import InputText from "./components/input-text";
 import InputCheckbox from "./components/input-checkbox";
 import Card from "./components/card";
+import Container from "./components/container";
 
 export default function App() {
   return (
     <>
-      <Text variant="body-md-bold" className="text-green-base">
-        Clean Project with tailwind
-      </Text>
-      <Icon svg={TrashIcon} className="fill-green-base" />
-      <Badge variant="primary">5</Badge>
-      <Badge variant="secondary">2 de 5</Badge>
-      <Button icon={TrashIcon} type="button">
-        Delete
-      </Button>
-      <ButtonIcon variant="primary" icon={TrashIcon} type="button"></ButtonIcon>
-      <ButtonIcon
-        variant="secondary"
-        icon={TrashIcon}
-        type="button"
-      ></ButtonIcon>
-      <ButtonIcon
-        variant="terciary"
-        icon={TrashIcon}
-        type="button"
-      ></ButtonIcon>
-      <InputText />
-      <InputCheckbox />
-      <Card size="md">Hello World</Card>
+      <Container>
+        <Text variant="body-md-bold" className="text-green-base">
+          Clean Project with tailwind
+        </Text>
+        <Icon svg={TrashIcon} className="fill-green-base" />
+        <Badge variant="primary">5</Badge>
+        <Badge variant="secondary">2 de 5</Badge>
+        <Button icon={TrashIcon} type="button">
+          Delete
+        </Button>
+        <ButtonIcon
+          variant="primary"
+          icon={TrashIcon}
+          type="button"
+        ></ButtonIcon>
+        <ButtonIcon
+          variant="secondary"
+          icon={TrashIcon}
+          type="button"
+        ></ButtonIcon>
+        <ButtonIcon
+          variant="terciary"
+          icon={TrashIcon}
+          type="button"
+        ></ButtonIcon>
+        <InputText />
+        <InputCheckbox />
+        <Card size="md">Hello World</Card>
+      </Container>
     </>
   );
 }

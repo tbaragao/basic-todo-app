@@ -19,7 +19,7 @@ export const inputTextVariants = cva(
   }
 );
 
-interface inputTextProps
+interface InputTextProps
   extends VariantProps<typeof inputTextVariants>,
     Omit<React.ComponentProps<"input">, "size" | "disabled"> {
   className?: string;
@@ -30,7 +30,7 @@ export default function InputText({
   disabled,
   className,
   ...props
-}: inputTextProps) {
+}: InputTextProps) {
   return (
     <input
       className={cx(

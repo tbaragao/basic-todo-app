@@ -12,7 +12,7 @@ export const inputCheckboxWrapperVariants = cva(
 export const inputCheckboxVariants = cva(
   `
          cursor-pointer appearance-none peer flex items-center justify-center border-2 border-solid transition overflow-hidden 
-        border-green-base hover:border-green-dark hover:border-green-dark/20 
+        border-green-base hover:border-green-dark/20 
         checked:border-green-base checked:bg-green-base 
         group-hover:checked:border-green-dark group-hover:checked:bg-green-dark
     `,
@@ -48,7 +48,7 @@ export const inputCheckboxIconVariants = cva(
   }
 );
 
-interface inputCheckboxProps
+interface InputCheckboxProps
   extends Omit<React.ComponentProps<"input">, "size" | "disabled">,
     VariantProps<typeof inputCheckboxVariants> {
   className?: string;
@@ -59,7 +59,7 @@ export default function InputCheckbox({
   disabled,
   className,
   ...props
-}: inputCheckboxProps) {
+}: InputCheckboxProps) {
   return (
     <label className={inputCheckboxWrapperVariants({ className })}>
       <input

@@ -16,7 +16,7 @@ export const cardVariants = cva(
   }
 );
 
-interface cardProps
+interface CardProps
   extends VariantProps<typeof cardVariants>,
     React.ComponentProps<"div"> {
   as?: keyof React.JSX.IntrinsicElements;
@@ -29,7 +29,7 @@ export default function Card({
   children,
   className,
   ...props
-}: cardProps) {
+}: CardProps) {
   return React.createElement(
     as,
     {
