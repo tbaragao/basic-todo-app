@@ -18,8 +18,14 @@ export default function App() {
           Clean Project with tailwind
         </Text>
         <Icon svg={TrashIcon} className="fill-green-base" />
-        <Badge variant="primary">5</Badge>
-        <Badge variant="secondary">2 de 5</Badge>
+        <div className="flex gap-1">
+          <Badge variant="primary">5</Badge>
+          <Badge variant="secondary">2 de 5</Badge>
+          <Badge variant="primary" loading>
+            5
+          </Badge>
+        </div>
+
         <Button icon={TrashIcon} type="button">
           Delete
         </Button>
