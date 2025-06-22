@@ -1,7 +1,7 @@
 # 📋 ToDo App
 
-🇧🇷 Um pequeno projeto de aprendizado desenvolvido com **ReactJS**, **TypeScript**, **Tailwind CSS**, **CVA (Class Variance Authority)** e **Vite**.  
-🇺🇸 A small learning project built with **ReactJS**, **TypeScript**, **Tailwind CSS**, **CVA (Class Variance Authority)**, and **Vite**.
+🇧🇷 Um pequeno projeto de aprendizado desenvolvido com **ReactJS**, **TypeScript**, **Tailwind CSS**, **CVA (Class Variance Authority)**, **Vite**, **vite-plugin-svgr** e **React Router**.  
+🇺🇸 A small learning project built with **ReactJS**, **TypeScript**, **Tailwind CSS**, **CVA (Class Variance Authority)**, **Vite**, **vite-plugin-svgr**, and **React Router**.
 
 🇧🇷 Este ToDo App tem como objetivo praticar conceitos fundamentais de front-end moderno, como componentização, tipagem estática, estilização utilitária e boas práticas de organização de código.  
 🇺🇸 This ToDo App aims to practice fundamental concepts of modern front-end development such as componentization, static typing, utility-first styling, and clean code organization.
@@ -16,6 +16,7 @@
 - [Tailwind CSS](https://tailwindcss.com/)
 - [CVA (Class Variance Authority)](https://cva.style/)
 - [vite-plugin-svgr](https://github.com/pd4d10/vite-plugin-svgr)
+- [React Router](https://reactrouter.com/)
 
 ---
 
@@ -64,6 +65,35 @@ src/
 
 ---
 
+## 🧭 Navegação · Routing
+
+🇧🇷 A aplicação utiliza o **React Router** no **modo declarativo**. As rotas são definidas diretamente em JSX dentro do componente **`App`**, integrado à árvore de componentes do React.  
+🇺🇸 The app uses **React Router** in **declarative mode**. Routes are defined directly in JSX inside the **`App`** component, integrated into the React component tree.
+
+Exemplo:
+
+```tsx
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import LayoutMain from "./layouts/LayoutMain";
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route element={<LayoutMain />}>
+          ...
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
+}
+```
+
+✅ 🇧🇷 Nesse padrão, não são utilizados APIs como `createBrowserRouter`; toda a configuração permanece declarativa.  
+✅ 🇺🇸 In this pattern, APIs such as `createBrowserRouter` are not used; the entire configuration remains declarative.
+
+---
+
 ## 🎯 Objetivo · Purpose
 
 - 🇧🇷 Desenvolvimento com React utilizando TypeScript  
@@ -77,6 +107,12 @@ src/
 
 - 🇧🇷 Composição dinâmica de classes com CVA  
 - 🇺🇸 Dynamic class composition using CVA  
+
+- 🇧🇷 Uso de SVGs como componentes com vite-plugin-svgr  
+- 🇺🇸 Using SVGs as components with vite-plugin-svgr  
+
+- 🇧🇷 Gerenciamento de rotas com React Router (modo declarativo)  
+- 🇺🇸 Route management with React Router (declarative mode)  
 
 - 🇧🇷 Aplicação de boas práticas em projetos front-end modernos  
 - 🇺🇸 Best practices in modern front-end projects  

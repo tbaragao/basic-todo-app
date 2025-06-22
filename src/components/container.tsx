@@ -16,7 +16,6 @@ interface ContainerProps
   extends VariantProps<typeof containerVariables>,
     Omit<React.ComponentProps<"div">, "size"> {
   as?: keyof React.JSX.IntrinsicElements;
-  className?: "string";
 }
 
 export default function Container({
