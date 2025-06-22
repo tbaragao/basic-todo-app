@@ -26,9 +26,11 @@ export default function App() {
           </Badge>
         </div>
 
-        <Button icon={TrashIcon} type="button">
-          Delete
-        </Button>
+        <div className="flex gap-1">
+          <Button icon={TrashIcon} type="button">
+            Delete
+          </Button>
+        </div>
         <div className="flex gap-2">
           <ButtonIcon
             variant="primary"
@@ -52,12 +54,23 @@ export default function App() {
             loading
           />
         </div>
-        <InputText />
-        <InputCheckbox />
-        <Card size="md">Hello World</Card>
-        <Skeleton rounded="sm" className="w-96 h-3 mb-2" />
-        <Skeleton rounded="lg" className="w-96 h-3 mb-2" />
-        <Skeleton rounded="full" className="w-96 h-96 mb-2" />
+        <div className="flex gap-1">
+          <InputText />
+        </div>
+
+        <div className="flex gap-2">
+          <InputCheckbox />
+          <InputCheckbox loading />
+        </div>
+
+        <div className="flex gap-2">
+          <Card size="md">Hello World</Card>
+        </div>
+        <div className="flex flex-col gap-2">
+          <Skeleton rounded="sm" className="w-96 h-3 mb-2" />
+          <Skeleton rounded="lg" className="w-96 h-3 mb-2" />
+          <Skeleton rounded="full" className="w-9 h-9 mb-2" />
+        </div>
       </Container>
     </>
   );
