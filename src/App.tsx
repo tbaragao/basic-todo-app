@@ -29,21 +29,29 @@ export default function App() {
         <Button icon={TrashIcon} type="button">
           Delete
         </Button>
-        <ButtonIcon
-          variant="primary"
-          icon={TrashIcon}
-          type="button"
-        ></ButtonIcon>
-        <ButtonIcon
-          variant="secondary"
-          icon={TrashIcon}
-          type="button"
-        ></ButtonIcon>
-        <ButtonIcon
-          variant="terciary"
-          icon={TrashIcon}
-          type="button"
-        ></ButtonIcon>
+        <div className="flex gap-2">
+          <ButtonIcon
+            variant="primary"
+            icon={TrashIcon}
+            type="button"
+          ></ButtonIcon>
+          <ButtonIcon
+            variant="secondary"
+            icon={TrashIcon}
+            type="button"
+          ></ButtonIcon>
+          <ButtonIcon
+            variant="terciary"
+            icon={TrashIcon}
+            type="button"
+          ></ButtonIcon>
+          <ButtonIcon
+            variant="primary"
+            icon={TrashIcon}
+            type="button"
+            loading
+          />
+        </div>
         <InputText />
         <InputCheckbox />
         <Card size="md">Hello World</Card>
